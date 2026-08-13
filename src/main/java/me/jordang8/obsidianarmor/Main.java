@@ -18,20 +18,20 @@ public class Main extends JavaPlugin implements SlimefunAddon {
 // testing
     @Override
     public void onEnable() {
-        ItemStack categoryItem = new CustomItem(Material.OBSIDIAN, "&8黑曜石合金装甲", "", "&a> 单击打开");
+        ItemStack categoryItem = new CustomItem(Material.OBSIDIAN, "&8Armadura de obsidiana", "", "&a> Haz clic para abrir");
 
         NamespacedKey categoryId = new NamespacedKey(this, "OBSIDIAN_ARMOR");
         Category category = new Category(categoryId, categoryItem);
         
         
-        SlimefunItemStack obs_alloy = new SlimefunItemStack("OBSIDIAN_ALLOY", Material.DIAMOND, "&8黑曜石合金", "&7用于制作黑曜石合金装备");
+        SlimefunItemStack obs_alloy = new SlimefunItemStack("OBSIDIAN_ALLOY", Material.DIAMOND, "&8Aleación de obsidiana", "&7Material para fabricar equipo de obsidiana.");
         ItemStack[] recipe = {  new ItemStack(Material.DIAMOND), new ItemStack(Material.DIAMOND),	new ItemStack(Material.DIAMOND),
         						new ItemStack(Material.DIAMOND), new ItemStack(Material.OBSIDIAN), 	new ItemStack(Material.DIAMOND),
         						new ItemStack(Material.DIAMOND), new ItemStack(Material.DIAMOND), 	new ItemStack(Material.DIAMOND) };
         SlimefunItem item = new SlimefunItem(category, obs_alloy, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
         item.register(this);
         
-        SlimefunItemStack obsHelmet = new SlimefunItemStack("OBSIDIAN_HELMET", Material.DIAMOND_HELMET, "&8黑曜石头盔", "&7用坚硬的黑曜石合金制成的头盔" );
+        SlimefunItemStack obsHelmet = new SlimefunItemStack("OBSIDIAN_HELMET", Material.DIAMOND_HELMET, "&8Yelmo de obsidiana", "&7Forjado con una resistente aleación de obsidiana." );
         ItemStack[] recipeForHelmet = {			obs_alloy, obs_alloy, obs_alloy,
         											obs_alloy, 	null, 	  obs_alloy,
         											null, 		null, 		null };
@@ -45,7 +45,7 @@ public class Main extends JavaPlugin implements SlimefunAddon {
        
         obs_helmet.register(this);
 
-        SlimefunItemStack obsChestplate = new SlimefunItemStack("OBSIDIAN_CHESTPLATE", Material.DIAMOND_CHESTPLATE, "&8黑曜石合金胸甲", "&7用坚硬的黑曜石合金制成的胸甲" );
+        SlimefunItemStack obsChestplate = new SlimefunItemStack("OBSIDIAN_CHESTPLATE", Material.DIAMOND_CHESTPLATE, "&8Coraza de obsidiana", "&7Forjada con una resistente aleación de obsidiana." );
         ItemStack[] recipeForChestplate = {		obs_alloy, 		null, obs_alloy,
         										obs_alloy, obs_alloy, obs_alloy,
         										obs_alloy, obs_alloy, obs_alloy };
@@ -61,7 +61,7 @@ public class Main extends JavaPlugin implements SlimefunAddon {
         
         
         
-        SlimefunItemStack obsLeggings = new SlimefunItemStack("OBSIDIAN_LEGGINGS", Material.DIAMOND_LEGGINGS, "&8黑曜石合金护腿", "&7用坚硬的黑曜石合金制成的护腿" );
+        SlimefunItemStack obsLeggings = new SlimefunItemStack("OBSIDIAN_LEGGINGS", Material.DIAMOND_LEGGINGS, "&8Grebas de obsidiana", "&7Forjadas con una resistente aleación de obsidiana." );
         ItemStack[] recipeForLeggings = {		obs_alloy, obs_alloy, obs_alloy,
         										obs_alloy, 		null, obs_alloy,
         										obs_alloy, 		null, obs_alloy };
@@ -76,7 +76,7 @@ public class Main extends JavaPlugin implements SlimefunAddon {
         obs_leggings.register(this);
         
         
-        SlimefunItemStack obsBoots = new SlimefunItemStack("OBSIDIAN_BOOTS", Material.DIAMOND_BOOTS, "&8黑曜石合金靴子", "&7用坚硬的黑曜石合金制成的靴子" );
+        SlimefunItemStack obsBoots = new SlimefunItemStack("OBSIDIAN_BOOTS", Material.DIAMOND_BOOTS, "&8Botas de obsidiana", "&7Forjadas con una resistente aleación de obsidiana." );
         ItemStack[] recipeForBoots = {				null,		null, 	null, 
         										obs_alloy, 		null, obs_alloy,
         										obs_alloy, 		null, obs_alloy };
