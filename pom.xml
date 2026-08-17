@@ -12,9 +12,14 @@
   </properties>
   
   <repositories>
+        <repository>
+            <id>drakescraft-labs-maven</id>
+            <url>https://drakescraft-labs.github.io/maven-repo/</url>
+        </repository>
+
   	<repository>
   		<id>paper-repo</id>
-  		<url>https://repo.destroystokyo.com/repository/maven-public/</url>
+  		<url>https://repo.papermc.io/repository/maven-public/</url>
   	</repository>
   	
   	<repository>
@@ -45,6 +50,13 @@
   </build>
   
   <dependencies>
+        <dependency>
+            <groupId>com.github.drakescraft_labs</groupId>
+            <artifactId>slimefun-core</artifactId>
+            <version>11.0-Drake-1.21.11-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
   	<dependency>
   		<groupId>org.bukkit</groupId>
   		<artifactId>bukkit</artifactId>
@@ -70,20 +82,10 @@
   	</dependency>
   	
   	<dependency>
-  		<groupId>com.github.TheBusyBiscuit</groupId>
-  		<artifactId>Slimefun4</artifactId>
-  		<version>master-SNAPSHOT</version>
-  		<scope>provided</scope>
-  		<exclusions>
-  			<exclusion>
-  				<groupId>io.github.thebusybiscuit</groupId>
-  				<artifactId>cscorelib2</artifactId>
-  			</exclusion>
-  			<exclusion>
-  				<groupId>org.bstats</groupId>
-  				<artifactId>bstats-bukkit</artifactId>
-  			</exclusion>
-  		</exclusions>
-  	</dependency>
+            <groupId>com.github.drakescraft_labs</groupId>
+            <artifactId>slimefun-core</artifactId>
+            <version>11.0-Drake-1.21.11-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
   </dependencies>
 </project>
