@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Obsidian-Armor/master/docs/banner.svg" width="100%" alt="OBSIDIAN-ARMOR Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Obsidian-Armor/master/banner.svg" width="100%" alt="OBSIDIAN-ARMOR Animated Banner" />
 </p>
 
 # Obsidian-Armor
